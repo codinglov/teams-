@@ -83,7 +83,7 @@ function appMenu() {
       createTeam();  
     });
   }
-}
+
   function createTeam() {
     inquirer.prompt([
         {

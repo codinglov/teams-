@@ -51,8 +51,8 @@ const generateTeam = team => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${JuniorEngineer.getId()}</li>
-            <li class="list-group-item">Email: <a href="mailto:${JuniorEngineer.getEmail()}">${JuniorEngineer.getEmail()}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/${JuniorEngineer.getGithub()}" target="_blank" rel="noopener noreferrer">${JuniorEngineer.getGithub()}</a></li>
+            <li class="list-group-item">Email: <a href="mailto:${JuniorEngineer.getEmail()}">${Jngineer.getEmail()}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a></li>
         </ul>
     </div>
 </div>
@@ -87,12 +87,12 @@ const generateTeam = team => {
     );
     html.push(team
         .filter(employee => employee.getRole() === "SeniorEngineer")
-        .map(SeniorEngineer => generateEngineer(SeniorEngineer))
+        .map(seniorengineer => generateEngineer(seniorengineer))
         .join("")
     );
     html.push(team
         .filter(employee => employee.getRole() === "JuniorEngineer")
-        .map(JuniorEngineer => generateEngineer(JuniorEngineer))
+        .map(juniorengineer => generateEngineer(juniorengineer))
         .join("")
     );
     html.push(team

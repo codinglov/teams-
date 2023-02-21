@@ -71,6 +71,7 @@ function appMenu() {
           },
         },
     ])
+}
     .then((answers) => {
       const TeamLead = new TeamLead(
         answers.TeamLeadName,
@@ -83,7 +84,7 @@ function appMenu() {
       createTeam();  
     });
   }
-}
+
   function createTeam() {
     inquirer.prompt([
         {
@@ -214,7 +215,7 @@ function appMenu() {
                         break;
                       case 'JuniorEngineer':
                         addJuniorEngineer();
-                        break; 
+                         
                       case 'Intern':
                         addIntern();
                         break;

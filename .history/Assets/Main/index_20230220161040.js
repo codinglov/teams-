@@ -1,7 +1,7 @@
 const Manager = require('./lib/Manager');
 const SeniorEngineer = require('./lib/SeniorEngineer');
 const JuniorEngineer = require('./lib/JuniorEngineer');
-const Intern = require('./lib/Intern');
+
 const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
@@ -71,6 +71,7 @@ function appMenu() {
           },
         },
     ])
+}
     .then((answers) => {
       const TeamLead = new TeamLead(
         answers.TeamLeadName,
@@ -83,7 +84,7 @@ function appMenu() {
       createTeam();  
     });
   }
-}
+
   function createTeam() {
     inquirer.prompt([
         {
@@ -209,12 +210,9 @@ function appMenu() {
                 ])
                 .then((userChoice) => {
                     switch (userChoice.memberChoice) {
-                      case 'SeniorEngineer':
+                      case 'Engineer':
                         addEngineer();
                         break;
-                      case 'JuniorEngineer':
-                        addJuniorEngineer();
-                        break; 
                       case 'Intern':
                         addIntern();
                         break;

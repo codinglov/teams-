@@ -87,12 +87,12 @@ const generateTeam = team => {
     );
     html.push(team
         .filter(employee => employee.getRole() === "SeniorEngineer")
-        .map(SeniorEngineer => generateEngineer(SeniorEngineer))
+        .map(seniorengineer => generateEngineer(seniorengineer))
         .join("")
     );
     html.push(team
         .filter(employee => employee.getRole() === "JuniorEngineer")
-        .map(JuniorEngineer => generateEngineer(JuniorEngineer))
+        .map(juniorengineer => generateEngineer(Juniorngineer))
         .join("")
     );
     html.push(team
