@@ -26,7 +26,7 @@ function appMenu() {
         {
           type:'input',
           name:'Manager',
-          message:"What is your manager's name?",
+          message:"What is your manager'sname?",
           validate: (answer) => {
             if (answer !== '') {
               return true;  
@@ -36,7 +36,7 @@ function appMenu() {
         },
         {
           type: 'input',
-          name: 'ManagerId',
+          name: 'TeamLeadId',
           message: "What is your Team Lead's id?",
           validate: (answer) => {
             const pass = answer.match(/^[1-9]\d*$/);
@@ -48,7 +48,7 @@ function appMenu() {
         },
         {
           type: 'input',
-          name: 'ManagerEmail',
+          name: 'TeamLeadEmail',
           message: "What is the Team Lead's email?",
           validate: (answer) => {
             const pass = answer.match(/\S+@\S+\.\S+/);
@@ -60,7 +60,7 @@ function appMenu() {
         },
         {
           type: 'input',
-          name: 'ManagerOfficeNumber',
+          name: 'TeamLeadOfficeNumber',
           message: "What is the team lead's office number?",
           validate: (answer) => {
             const pass = answer.match(/^[1-9]\d*$/);
@@ -72,14 +72,14 @@ function appMenu() {
         },
     ])
     .then((answers) => {
-      const Manager = new ManagerLead(
-        answers.ManagerName,
-        answers.ManagerId,
-        answers.ManagerEmail,
-        answers.ManagerNumber
+      const TeamLead = new TeamLead(
+        answers.TeamLeadName,
+        answers.TeamLeadId,
+        answers.TeamLeadEmail,
+        answers.TeamLeadOfficeNumber
       );
       teamMembers.push(manager);
-      idArray.push(answers.ManagerId);
+      idArray.push(answers.TeamLeadId);
       createTeam();  
     });
   }

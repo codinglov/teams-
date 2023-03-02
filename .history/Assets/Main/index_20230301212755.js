@@ -72,14 +72,14 @@ function appMenu() {
         },
     ])
     .then((answers) => {
-      const Manager = new ManagerLead(
-        answers.ManagerName,
-        answers.ManagerId,
-        answers.ManagerEmail,
-        answers.ManagerNumber
+      const Manage = new TeamLead(
+        answers.TeamLeadName,
+        answers.TeamLeadId,
+        answers.TeamLeadEmail,
+        answers.TeamLeadOfficeNumber
       );
       teamMembers.push(manager);
-      idArray.push(answers.ManagerId);
+      idArray.push(answers.TeamLeadId);
       createTeam();  
     });
   }

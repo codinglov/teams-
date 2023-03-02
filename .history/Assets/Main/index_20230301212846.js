@@ -76,10 +76,10 @@ function appMenu() {
         answers.ManagerName,
         answers.ManagerId,
         answers.ManagerEmail,
-        answers.ManagerNumber
+        answers.TeamLeadOfficeNumber
       );
       teamMembers.push(manager);
-      idArray.push(answers.ManagerId);
+      idArray.push(answers.TeamLeadId);
       createTeam();  
     });
   }

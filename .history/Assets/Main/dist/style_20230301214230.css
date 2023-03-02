@@ -10,7 +10,7 @@
   }
   
   .employee-card {
-    margin: 0.5em;
+    margin: em;
     max-width: 275px;
     width: 90%;
     min-height: 22rem;

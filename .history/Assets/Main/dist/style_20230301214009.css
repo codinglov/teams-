@@ -1,6 +1,6 @@
 .team-heading {
-    background-color: #adb904;
-    color: #eceabf;
+    background-color: #1b0385;
+    color: #e8e9f1;
   }
   
   .team-area {
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 3px 4px 10px rgba(49, 49, 33, 0.7);
+    box-shadow: 3px 4px 10px rgba(24, 25, 30, 0.7);
     border: none;
   }
   
@@ -27,11 +27,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f2f2e2;
+    background-color: #f6f7f8;
   }
   
   .list-group-item {
-    color: #232420;
+    color: #0a0a09;
     text-decoration: none;
   }
   

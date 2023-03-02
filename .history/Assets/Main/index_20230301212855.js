@@ -79,7 +79,7 @@ function appMenu() {
         answers.ManagerNumber
       );
       teamMembers.push(manager);
-      idArray.push(answers.ManagerId);
+      idArray.push(answers.TeamLeadId);
       createTeam();  
     });
   }

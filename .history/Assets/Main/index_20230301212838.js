@@ -75,11 +75,11 @@ function appMenu() {
       const Manager = new ManagerLead(
         answers.ManagerName,
         answers.ManagerId,
-        answers.ManagerEmail,
-        answers.ManagerNumber
+        answers.TeamLeadEmail,
+        answers.TeamLeadOfficeNumber
       );
       teamMembers.push(manager);
-      idArray.push(answers.ManagerId);
+      idArray.push(answers.TeamLeadId);
       createTeam();  
     });
   }

@@ -5,7 +5,7 @@
   
   .team-area {
     max-width: 1000px;
-    margin: 2.5em auto;
+    margin: em auto;
     flex-wrap: wrap;
   }
   
